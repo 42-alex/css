@@ -127,3 +127,23 @@ font: italic bold 24px Arial, sans-serif;
   background-color: var(--main-color);
 }
 ```
+
+---
+### How to make content visible only for screen readers
+
+
+```
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+}
+```
